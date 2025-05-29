@@ -1,0 +1,11 @@
+/.DS_Store
+/.env
+/.venv
+/__pycache__
+/content_metrics.csv
+/env_file
+/ga4-pipeline-457300.json
+/ga4_data.db
+/ga4_data_pipeline.log
+/site_metrics.csv
+/users_metrics.csv
