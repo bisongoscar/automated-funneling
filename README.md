@@ -25,28 +25,35 @@ Service account credentials JSON file
 ## Installation
 
 1) Clone repository:
+``` bash
 git clone https://github.com/bisongoscar/automated-funneling.git
 cd ga4-data-pipeline
+```
 
-2) Create virtual environment:
+3) Create virtual environment:
+```bash
 python -m venv venv
 source venv/bin/activate  # Linux/Mac
 venv\Scripts\activate    # Windows
-
-3) Install dependencies:
+```
+4) Install dependencies:
+```bash
 pip install google-analytics-data pandas python-dotenv tenacity
+  ```
 
 ## Configuration
 
 1) Create .env file:
+```bash
 GA4_PROPERTY_ID=YOUR_PROPERTY_ID
 GA4_CREDENTIALS_PATH=/path/to/service-account.json
-
-2) Database path can be modified in the script's CONFIG dictionary
+```
+3) Database path can be modified in the script's CONFIG dictionary
 
 ## Usage
-
+```bash
 python ga4_pipeline.py
+```
 
 Outputs:
 
@@ -57,7 +64,3 @@ Log file: ga4_data_pipeline.log
 ## Error Handling
 
 Automatic retries for API failures (3 attempts), Database transaction rollbacks on errors, Comprehensive error logging, Empty dataset detection.
-
-## License
-
-MIT License - see LICENSE file
