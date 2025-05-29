@@ -25,7 +25,7 @@ Service account credentials JSON file
 ## Installation
 
 1) Clone repository:
-git clone https://github.com/bisongoscar/ga4-data-pipeline.git
+git clone https://github.com/bisongoscar/automated-funneling.git
 cd ga4-data-pipeline
 
 2) Create virtual environment:
